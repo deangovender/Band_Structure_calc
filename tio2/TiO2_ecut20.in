@@ -1,0 +1,31 @@
+&control
+    calculation = 'scf'
+    prefix = 'tio2_ecut20'
+    outdir = './tmp'
+    pseudo_dir = '../pseudo'
+    verbosity = 'high'
+/
+&system
+    ibrav = 1, celldm(1) = 7.37,
+    nat = 3, ntyp = 2,
+    ecutwfc = 20,
+    ecutrho = 160,
+    occupations = 'smearing',
+    smearing = 'mp',
+    degauss = 0.01
+/
+&electrons
+    conv_thr = 1.0d-8,
+    mixing_beta = 0.7
+/
+ATOMIC_SPECIES
+Ti  47.867  Ti.pbe-spn-rrkjus_psl.1.0.0.UPF
+O   15.999  O.pbe-n-rrkjus_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {angstrom}
+Ti 0.000000 0.000000 0.000000
+O  1.945000 1.945000 0.000000
+O -1.945000 1.945000 0.000000
+
+K_POINTS automatic
+4 4 4 0 0 0

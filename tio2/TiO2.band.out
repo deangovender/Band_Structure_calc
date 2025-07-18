@@ -1,0 +1,238 @@
+
+     Program PWSCF v.7.2 starts on 18Jul2025 at  6:27:27 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     4485 MiB available memory on the printing compute node when the environment starts
+
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     Atomic positions and unit cell read from directory:
+     ./tmp/tio2.save/
+     Atomic positions from file used, from input discarded
+
+     file Ti.pbe-spn-rrkjus_psl.1.0.0.UPF: wavefunction(s)  3S 3D renormalized
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        1369     681    221                38641    13613    2373
+
+     Using Slab Decomposition
+
+
+
+     bravais-lattice index     =            1
+     lattice parameter (alat)  =       7.3700  a.u.
+     unit-cell volume          =     400.3156 (a.u.)^3
+     number of atoms/cell      =            3
+     number of atomic types    =            2
+     number of electrons       =        24.00
+     number of Kohn-Sham states=           12
+     kinetic-energy cutoff     =      40.0000  Ry
+     charge density cutoff     =     320.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   7.370000  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for Ti read from file:
+     ../pseudo/Ti.pbe-spn-rrkjus_psl.1.0.0.UPF
+     MD5 check sum: e281089c08e14b8efcf92e44a67ada65
+     Pseudo is Ultrasoft + core correction, Zval = 12.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.2.2
+     Using radial grid of 1177 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for O  read from file:
+     ../pseudo/O.pbe-n-rrkjus_psl.1.0.0.UPF
+     MD5 check sum: 91400c9766925bcf19f520983a725ff0
+     Pseudo is Ultrasoft + core correction, Zval =  6.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3MaX
+     Using radial grid of 1095 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Ti            12.00    47.86700     Ti( 1.00)
+        O              6.00    15.99900     O ( 1.00)
+
+      4 Sym. Ops. (no inversion) found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Ti  tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+         2           O   tau(   2) = (   0.4987133   0.4987133   0.0000000  )
+         3           O   tau(   3) = (  -0.4987133   0.4987133   0.0000000  )
+
+     number of k points=     8  Methfessel-Paxton smearing, width (Ry)=  0.0100
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.2500000
+        k(    2) = (   0.5000000   0.0000000   0.0000000), wk =   0.2500000
+        k(    3) = (   0.5000000   0.5000000   0.0000000), wk =   0.2500000
+        k(    4) = (   0.0000000   0.0000000   0.0000000), wk =   0.2500000
+        k(    5) = (   0.0000000   0.0000000   0.5000000), wk =   0.2500000
+        k(    6) = (   0.5000000   0.0000000   0.5000000), wk =   0.2500000
+        k(    7) = (   0.5000000   0.5000000   0.5000000), wk =   0.2500000
+        k(    8) = (   0.0000000   0.0000000   0.5000000), wk =   0.2500000
+
+     Dense  grid:    38641 G-vectors     FFT dimensions: (  45,  45,  45)
+
+     Smooth grid:    13613 G-vectors     FFT dimensions: (  30,  30,  30)
+
+     Estimated max dynamical RAM per process >     127.51 MB
+
+     Check: negative core charge=   -0.000009
+
+     The potential is recalculated from file :
+     ./tmp/tio2.save/charge-density
+
+     Starting wfcs are   18 randomized atomic wfcs
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+
+     ethr =  4.17E-11,  avg # of iterations =106.0
+
+     total cpu time spent up to now is        4.8 secs
+
+     End of band structure calculation
+
+          k = 0.0000 0.0000 0.0000 (  1743 PWs)   bands (ev):
+
+   -86.6578 -86.6086 -86.5997 -50.4462 -32.2117 -26.9695 -26.5721 -26.5720
+     3.0324   5.5604   6.4323   6.7025
+
+          k = 0.5000 0.0000 0.0000 (  1686 PWs)   bands (ev):
+
+   -86.6571 -86.6079 -86.5972 -50.4448 -32.1918 -26.9682 -26.5705 -26.5656
+     2.0741   4.8602   5.8587   6.3073
+
+          k = 0.5000 0.5000 0.0000 (  1692 PWs)   bands (ev):
+
+   -86.6566 -86.6069 -86.5980 -50.4441 -32.1761 -26.9669 -26.5892 -26.5891
+     3.6634   3.6635   6.5506   6.5735
+
+          k = 0.0000 0.0000 0.0000 (  1743 PWs)   bands (ev):
+
+   -86.6578 -86.6086 -86.5997 -50.4462 -32.2117 -26.9695 -26.5721 -26.5720
+     3.0324   5.5604   6.4323   6.7025
+
+          k = 0.0000 0.0000 0.5000 (  1686 PWs)   bands (ev):
+
+   -86.6553 -86.6079 -86.5990 -50.4454 -32.1781 -26.9829 -26.5709 -26.5708
+     3.2200   4.7083   5.8045   6.7838
+
+          k = 0.5000 0.0000 0.5000 (  1692 PWs)   bands (ev):
+
+   -86.6561 -86.6074 -86.5980 -50.4442 -32.1884 -26.9816 -26.5694 -26.5644
+     2.7908   3.8046   5.0750   7.0026
+
+          k = 0.5000 0.5000 0.5000 (  1736 PWs)   bands (ev):
+
+   -86.6581 -86.6090 -86.6000 -50.4435 -32.1887 -26.9803 -26.5881 -26.5880
+     4.4078   4.4079   5.3922   6.0529
+
+          k = 0.0000 0.0000 0.5000 (  1686 PWs)   bands (ev):
+
+   -86.6553 -86.6079 -86.5990 -50.4454 -32.1781 -26.9829 -26.5709 -26.5708
+     3.2200   4.7083   5.8045   6.7838
+
+     Writing all to output data dir ./tmp/tio2.save/
+
+     init_run     :      0.57s CPU      0.62s WALL (       1 calls)
+     electrons    :      4.04s CPU      4.07s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      0.17s CPU      0.18s WALL (       1 calls)
+     hinit0       :      0.34s CPU      0.34s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :      4.04s CPU      4.07s WALL (       1 calls)
+     v_of_rho     :      0.03s CPU      0.04s WALL (       1 calls)
+     newd         :      0.06s CPU      0.09s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.00s CPU      0.00s WALL (       8 calls)
+     init_us_2:cp :      0.00s CPU      0.00s WALL (       8 calls)
+     cegterg      :      3.85s CPU      3.87s WALL (      44 calls)
+
+     Called by *egterg:
+     cdiaghg      :      0.12s CPU      0.12s WALL (     856 calls)
+     h_psi        :      2.13s CPU      2.15s WALL (     900 calls)
+     s_psi        :      0.35s CPU      0.35s WALL (     900 calls)
+     g_psi        :      0.02s CPU      0.02s WALL (     848 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      0.35s CPU      0.36s WALL (     900 calls)
+     vloc_psi     :      1.41s CPU      1.43s WALL (     900 calls)
+     add_vuspsi   :      0.35s CPU      0.35s WALL (     900 calls)
+
+     General routines
+     calbec       :      0.35s CPU      0.36s WALL (     900 calls)
+     fft          :      0.13s CPU      0.13s WALL (      13 calls)
+     ffts         :      0.13s CPU      0.13s WALL (       1 calls)
+     fftw         :      1.10s CPU      1.11s WALL (    9402 calls)
+     interpolate  :      0.13s CPU      0.13s WALL (       1 calls)
+     davcio       :      0.00s CPU      0.00s WALL (      16 calls)
+
+     Parallel routines
+
+     PWSCF        :      4.71s CPU      4.86s WALL
+
+
+   This run was terminated on:   6:27:32  18Jul2025            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

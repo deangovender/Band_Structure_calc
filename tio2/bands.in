@@ -1,0 +1,6 @@
+&BANDS
+    prefix = 'tio2',
+    outdir = './tmp',
+    filband = 'tio2.bands'
+/
+
