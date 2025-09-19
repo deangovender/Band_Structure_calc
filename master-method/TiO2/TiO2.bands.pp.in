@@ -1,0 +1,5 @@
+&BANDS
+  prefix = 'TiO2',
+  outdir = './tmp',
+  filband = 'TiO2.bands.dat'
+/

@@ -1,0 +1,33 @@
+&CONTROL
+  calculation = 'scf',
+  prefix      = 'TiO2',
+  outdir      = './tmp',
+  pseudo_dir  = '/home/dean_gov/qe-pp/gbrv_lda',
+/
+&SYSTEM
+  ibrav   = 6,
+  a       = 4.65178,
+  c       = 2.96991,
+  ntyp    = 2,
+  nat     = 6,
+  ecutwfc = 5,
+  ecutrho = 40,
+  occupations = 'fixed',
+  input_dft   = 'pz',
+/
+&ELECTRONS
+  conv_thr    = 1.0d-6,
+  mixing_beta = 0.3,
+/
+ATOMIC_SPECIES
+ Ti  47.867  ti_lda_v1.4.uspp.F.UPF
+ O   15.999  o_lda_v1.2.uspp.F.UPF
+ATOMIC_POSITIONS {angstrom}
+ Ti  2.325892  2.325892  1.484957
+ Ti  0.000000  0.000000  0.000000
+ O   3.233404  3.233404  0.000000
+ O   0.907512  3.744272  1.484957
+ O   1.418380  1.418380  0.000000
+ O   3.744272  0.907512  1.484957
+K_POINTS {automatic}
+ 3 3 4  0 0 0
